@@ -1,0 +1,9 @@
+- hosts: production 
+  remote_user: user
+  vars:
+    app_name: foss4gna_geonode 
+    github_user: jj0hns0n 
+    server_name: 0.0.0.0
+    deploy_user: user 
+  roles:
+     - { role: ortelius.geonode }
